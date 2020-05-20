@@ -17,7 +17,7 @@ RUN git clone https://github.com/iLCSoft/LCIO lcio \
 && mkdir build \
 && cd build \
 && cmake -DBUILD_LCIO_EXAMPLES=OFF -DBUILD_ROOTDICT=ON -DCMAKE_INSTALL_PREFIX=/usr/local .. \
-&& make install
+&& make install \
 && cd /tmp && rm -rf lcio
 RUN git clone https://github.com/JeffersonLab/hpstr.git \
 && cd hpstr \
