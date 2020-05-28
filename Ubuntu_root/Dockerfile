@@ -8,7 +8,7 @@ RUN git clone http://root.cern.ch/git/root.git \
 && git checkout v6-20-00-patches \
 && mkdir /tmp/root/cbuild \
 && cd /tmp/root/cbuild \
-&& cmake -DALL=ON .. \
+&& cmake -DALL=ON -Dcxx17=ON .. \
 && make install \
 && cd ../.. && rm -rf root
 # Note: make -j 6 does not reliably build root in a Docker. Single thread build does.

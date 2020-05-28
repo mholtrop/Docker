@@ -21,6 +21,7 @@ libx11-dev
 libxpm-dev
 libxft-dev
 libxext-dev
+libxmu-dev
 libpng-dev
 libjpeg-dev
 
