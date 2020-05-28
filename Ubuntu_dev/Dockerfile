@@ -27,7 +27,7 @@ EXPOSE 22
 
 ####### Setup the HPS User ##################
 
-COPY passwords.txt /tmp/passwords
+COPY passwords.txt /tmp/passwords.txt
 RUN adduser hps --shell /bin/bash --system --disabled-password \
 && chpasswd < /tmp/passwords.txt 
 COPY .bashrc .profile  /home/hps/
