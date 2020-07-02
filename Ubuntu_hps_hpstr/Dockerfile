@@ -11,7 +11,7 @@ Includes LCIO, ROOT  and minimal Development Tools and Libraries.\
 Runs an ssh-server for easy login and X11 forwarding."
 
 WORKDIR /tmp
-RUN git clone https://github.com/iLCSoft/LCIO lcio \
+RUN git clone https://github.com/LDMX-Software/lcio.git lcio \
 && cd lcio \
 && git checkout v02-07-05 \
 && mkdir build \
